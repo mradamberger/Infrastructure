@@ -20,3 +20,67 @@ jenkins:
           username: "admin"
           password: "password"
           scope: GLOBAL
+       - basicSSHUserPrivateKey:
+          id: "jenkins_agent"
+          username: "jenkins"
+          privateKeySource:
+           directEntry:
+              privateKey: |
+              -----BEGIN OPENSSH PRIVATE KEY-----
+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
+-----END OPENSSH PRIVATE KEY-----
+           scope: GLOBAL
+  tool:
+    sonarRunnerInstallation:
+      installations:
+      - name: "SonarQube"
+        properties:
+       - installSource:
+           installers:
+           - sonarRunnerInstaller:
+               id: "4.7.0.2747"
+
+  unclassified:
+    sonarGlobalConfiguration:
+      buildWrapperEnabled: true
+      installations:
+      - name: "SonarQube"
+        serverUrl: "http://192.168.44.44:9000"
+        triggers:
+          skipScmCause: false
+          skipUpstreamCause: false
