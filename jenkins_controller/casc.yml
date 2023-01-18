@@ -64,7 +64,7 @@ credentials:
                 WABLwexemR5VO1bL7K6yetxivxuRPIlr/eLZAVhkU2MICOYzcwKK0ZqnuokGq/9azPLbeG
                 cYq8saNnZ3nKGYfQAAAA1wYW5kYUB2YWdyYW50AQIDBA==
                 -----END OPENSSH PRIVATE KEY-----
-                          scope: GLOBAL
+          scope: GLOBAL
 
 tool:
   sonarRunnerInstallation:
@@ -88,4 +88,14 @@ jobs:
   - file: /usr/share/jenkins/ref/jobs/backend.groovy
   - file: /usr/share/jenkins/ref/jobs/frontend.groovy
   - file: /usr/share/jenkins/ref/jobs/app_of_apps.groovy
+
+
+terraform:
+    installations:
+    - name: "Terraform"
+      properties:
+      - installSource:
+          installers:
+          - terraformInstaller:
+              id: "21207-linux-amd64"
 
